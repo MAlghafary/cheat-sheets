@@ -1,1 +1,7 @@
-
+-- Spring Security concepts :
+1- Principle : Any user,device,or system that would like to interact with your application 
+2- Authentication: A process by which your application makes sure that the principal is who they claim to be.
+3- Credentials: When a principal tries to interact with your application, the authentication process kicks in and challenges 
+the principal to pass on some values.One such example is a username/password combination and these values are called credentials.
+The authentication process validates the principal's passed-in credentials against a data store and replies back
+with the appropriate result.
