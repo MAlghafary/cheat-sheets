@@ -1,7 +1,25 @@
 -- Spring Security concepts :
 1- Principle : Any user,device,or system that would like to interact with your application 
+
 2- Authentication: A process by which your application makes sure that the principal is who they claim to be.
+
 3- Credentials: When a principal tries to interact with your application, the authentication process kicks in and challenges 
 the principal to pass on some values.One such example is a username/password combination and these values are called credentials.
 The authentication process validates the principal's passed-in credentials against a data store and replies back
-with the appropriate result.
+with the appropriate result.w
+
+4-Authorization: After successful authentication, the principal is checked again for actions that it can perform on your application. 
+This process of checking rights for a principal and then granting necessary permissions is called authorization.
+
+5-Secured item/resource: The item or resource that is marked as secured and requires the principal (user) to successfully
+ complete both authentication and authorization
+ 
+6-GrantedAuthority: A Spring Security object (org.springframework.security.core.GrantedAuthority interface) that contains/holds 
+permissions/access-right details of a principal.
+
+7-SecurityContext: A Spring Security object that holds a principal's authentication details.
+ 
+ --------------------------------------------------------------------------------------------------------------------------------------
+ - Spring Security is based on Servler Filters 
+ - The entry point for spring security is a servlet filter of type DelegatingFilterProxy named springSecurityFilterChain, this is a 
+   servlet filter that 
