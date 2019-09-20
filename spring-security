@@ -1,3 +1,5 @@
+------- Introduction -------------------
+
 -- Spring Security concepts :
 1- Principle : Any user,device,or system that would like to interact with your application 
 
@@ -19,7 +21,13 @@ permissions/access-right details of a principal.
 
 7-SecurityContext: A Spring Security object that holds a principal's authentication details.
  
- --------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------
  - Spring Security is based on Servler Filters 
- - The entry point for spring security is a servlet filter of type DelegatingFilterProxy named springSecurityFilterChain, this is a 
-   servlet filter that 
+ - The entry point for spring security is a servlet filter of type DelegatingFilterProxy named springSecurityFilterChain
+ - The DelegatingFilterProxy will delegate to a spring bean @Bean of type FilterChainProxy named springSecurityFilterChain,
+   FilterChainProxy is responsible for passing the request through the various Servlet Filters configured as part of Spring Security.
+ - DelegatingFilterProxy (Servlet Filter ) --> FilterChainProxy (Spring bean ) --> Filter 1 --> Filter 2 --> Filter 3 
+   --> Protected Resource
+
+--------- Basic Authentication and Authorization  ------------------- 
+- 
