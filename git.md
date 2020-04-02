@@ -26,3 +26,9 @@ Stop tracking remote branch :
  ( if someone alredy checked the commit, it will be out of sync)
  
  Not Last Commit : Use Interactive rebase 
+ 
+ ## Alias ##
+ Create an Alias 
+ ``` 
+ git config --global alias.ci "commit -v"
+ ``` 
